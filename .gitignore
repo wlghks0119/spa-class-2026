@@ -1,3 +1,43 @@
+# =========================
+# Operating Systems (OS)
+# =========================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux / Unix
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =========================
+# Node.js
+# =========================
+
+# Dependencies
+node_modules/
+.npm
+.node_repl_history
+
 # Logs
 logs
 *.log
@@ -7,26 +47,32 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-.DS_Store
-dist
-dist-ssr
-coverage
-*.local
+# =========================
+# Vue.js / Vite / Build
+# =========================
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
+dist/
+dist-ssr/
+*.timestamp-*-*.mjs
 *.tsbuildinfo
-
 .eslintcache
+
+# =========================
+# Environment Variables
+# =========================
+
+*.local
+# .env 파일들은 보안을 위해 보통 제외합니다 (필요시 주석 해제)
+# .env
+# .env.local
+# .env.*.local
+
+# =========================
+# Testing
+# =========================
+
+# Coverage
+coverage/
 
 # Cypress
 /cypress/videos/
@@ -35,5 +81,29 @@ coverage
 # Vitest
 __screenshots__/
 
-# Vite
-*.timestamp-*-*.mjs
+# =========================
+# Editors and IDEs
+# =========================
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+
+# IntelliJ / WebStorm
+.idea/
+
+# Visual Studio
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Vim
+*.sw?
+*.swo
+*.swn
+
+# =========================
+# Git / Miscellaneous
+# =========================
+!.gitignore
